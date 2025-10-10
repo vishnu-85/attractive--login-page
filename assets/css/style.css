@@ -1,0 +1,154 @@
+    body{
+      margin: 0;
+    }
+    *{
+      font-family: "Manrope"
+    }
+    /* Background container */
+.login-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url('../images/bg.png');
+  background-size: cover; /* Or contain, or specific dimensions */
+  background-repeat: no-repeat;
+  animation: backgroundScroll 15s linear infinite; /* Adjust duration and timing */
+}
+
+@keyframes backgroundScroll {
+  0% {
+    background-position: 0 50%;
+  }
+  50% { background-position: 50% 100%; }
+  75% {
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 50% 0;
+  }
+
+}
+
+
+
+/* Dark overlay for readability */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(5, 5, 35, 0.5);
+  z-index: 0;
+}
+
+/* Glassmorphism card */
+.login-box {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 40px;
+  width: 350px;
+  text-align: center;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  margin: 0 1rem;
+}
+
+/* Logo and title */
+.logo img {
+  width: 200px;
+  margin-bottom: 10px;
+}
+.logo h2 {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+h3 {
+  color: #fff;
+  margin-bottom: 18px;
+}
+
+/* Input groups */
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+.input-group i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ccc;
+}
+.input-group input {
+  width: 100%;
+  padding: 12px 12px 12px 35px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  cursor: inherit;
+  box-sizing: border-box;
+}
+.input-group input::placeholder {
+  color: #eee;
+}
+
+/* Buttons */
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: 0.3s;
+  background: linear-gradient(to right, #332f86, #25e2a0); /* Blue-green gradient */
+  box-shadow: 0 4px 15px rgba(44, 62, 80, 0.4);
+}
+.btn:hover {
+  background: linear-gradient(to right, #332f86, #25e2a0); /* Blue-green gradient */
+ }
+
+.btn-google {
+  width: 100%;
+  padding: 12px;
+  background: #fff;
+  color: #444;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Divider */
+.divider {
+  margin: 15px 0;
+  color: #ddd;
+  font-size: 14px;
+}
+
+/* Forgot password link */
+.forgot-link {
+  color: #25e2a0;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+.forgot-link:hover {
+  text-decoration: underline;
+}
