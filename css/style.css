@@ -12,7 +12,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  background-image: url('./bg.png');
+  background-image: url('../images/bg.png');
   background-size: cover; /* Or contain, or specific dimensions */
   background-repeat: no-repeat;
   animation: backgroundScroll 15s linear infinite; /* Adjust duration and timing */
